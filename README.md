@@ -23,12 +23,22 @@ console.log(inArray(null));
 //=> false
 ```
 
+## Benchmark
+`in-array` outperforms the traditional `array.indexOf(elem) > -1` method. If you would like to run the benchmark yourself it is available at [benchmarks.js](./benchmark.js)
+
+```
+inArray x 14,392,416 ops/sec ±3.58% (82 runs sampled)
+indexOf x 8,207,486 ops/sec ±1.28% (82 runs sampled)
+
+inArray is faster
+```
+
 ## Author
 
 **Jon Schlinkert**
- 
+
 + [github/jonschlinkert](https://github.com/jonschlinkert)
-+ [twitter/jonschlinkert](http://twitter.com/jonschlinkert) 
++ [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
 
 ## License
 Copyright (c) 2014 Jon Schlinkert, contributors.  
