@@ -28,14 +28,12 @@ describe('inArray:', function () {
   });
 
   it('should\'nt blow up on null', function () {
-    var fixture = [];
     var actual = inArray(null, 'd');
     expect(actual).to.equal(false);
     expect(actual).to.not.equal(true);
   });
 
   it('should\'nt blow up when no value is passed', function () {
-    var fixture = [];
     var actual = inArray(null);
     expect(actual).to.equal(false);
     expect(actual).to.not.equal(true);
