@@ -34,11 +34,17 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha -R spec"
+    "lint": "jshint *.js test/*.js",
+    "test": "npm run lint && mocha -R spec"
   },
   "devDependencies": {
-    "verb": "~0.2.6",
+    "benchmark": "^2.1.0",
     "chai": "~1.9.1",
-    "mocha": "*"
-  }
+    "jshint": "^2.9.1",
+    "mocha": "*",
+    "verb": "~0.2.6"
+  },
+  "files": [
+    "index.js"
+  ]
 }
