@@ -3,31 +3,14 @@
   "description": "Return true if a value exists in an array. Faster than using indexOf and won't blow up on null values.",
   "version": "0.1.0",
   "homepage": "https://github.com/jonschlinkert/in-array",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/in-array.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/in-array",
   "bugs": {
     "url": "https://github.com/jonschlinkert/in-array/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jonschlinkert/in-array/blob/master/LICENSE-MIT"
-    }
-  ],
-  "keywords": [
-    "docs",
-    "documentation",
-    "generate",
-    "generator",
-    "markdown",
-    "templates",
-    "verb"
+  "license": "MIT",
+  "files": [
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
@@ -35,16 +18,36 @@
   },
   "scripts": {
     "lint": "jshint *.js test/*.js",
-    "test": "npm run lint && mocha -R spec"
+    "test": "npm run lint && mocha"
   },
   "devDependencies": {
     "benchmark": "^2.1.0",
-    "chai": "~1.9.1",
-    "jshint": "^2.9.1",
-    "mocha": "*",
-    "verb": "~0.2.6"
+    "gulp-format-md": "^0.1.7"
   },
-  "files": [
-    "index.js"
-  ]
+  "keywords": [
+    "array",
+    "check",
+    "element",
+    "find",
+    "index",
+    "index-of",
+    "of"
+  ],
+  "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "reflinks": [
+      "verb"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
 }

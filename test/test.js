@@ -1,41 +1,26 @@
-/*!
- * in-array <https://github.com/jonschlinkert/in-array>
- *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
- * Licensed under the MIT License
- */
+'use strict';
 
-var expect = require('chai').expect;
-var inArray = require('../');
+var assert = require('assert');
+var inArray = require('..');
 
-describe('inArray:', function () {
-  it('should return true if the value exists in the array.', function () {
-    var fixture = ['a', 'b', 'c', 'c'];
-    var actual = inArray(fixture, 'a');
-    expect(actual).to.equal(true);
+describe('inArray:', function() {
+  it('should return true if the value exists in the array.', function() {
+    assert(inArray(['a', 'b', 'c', 'c'], 'a'));
   });
 
-  it('should return true if the value exists in the array.', function () {
-    var fixture = ['a', 'b', 'c', 'c'];
-    var actual = inArray(fixture, 'd');
-    expect(actual).to.equal(false);
+  it('should return true if the value exists in the array.', function() {
+    assert(!inArray(['a', 'b', 'c', 'c'], 'd'));
   });
 
-  it('should\'nt blow up on empty arrays', function () {
-    var fixture = [];
-    var actual = inArray(fixture, 'd');
-    expect(actual).to.equal(false);
+  it('should\'nt blow up on empty arrays', function() {
+    assert(!inArray([], 'd'));
   });
 
-  it('should\'nt blow up on null', function () {
-    var actual = inArray(null, 'd');
-    expect(actual).to.equal(false);
-    expect(actual).to.not.equal(true);
+  it('should\'nt blow up on null', function() {
+    assert(!inArray(null, 'd'));
   });
 
-  it('should\'nt blow up when no value is passed', function () {
-    var actual = inArray(null);
-    expect(actual).to.equal(false);
-    expect(actual).to.not.equal(true);
+  it('should\'nt blow up when no value is passed', function() {
+    assert(!inArray(null));
   });
 });
