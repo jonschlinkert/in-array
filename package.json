@@ -17,8 +17,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "lint": "jshint *.js test/*.js",
-    "test": "npm run lint && mocha"
+    "test": "mocha"
   },
   "devDependencies": {
     "benchmark": "^2.1.0",
