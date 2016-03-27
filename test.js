@@ -1,7 +1,8 @@
 'use strict';
 
+require('mocha');
 var assert = require('assert');
-var inArray = require('..');
+var inArray = require('./');
 
 describe('inArray:', function() {
   it('should return true if the value exists in the array.', function() {
