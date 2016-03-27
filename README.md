@@ -24,6 +24,15 @@ console.log(inArray(null));
 //=> false
 ```
 
+## Related projects
+
+You might also be interested in these projects:
+
+* [arr-flatten](https://www.npmjs.com/package/arr-flatten): Recursively flatten an array or arrays. This is the fastest implementation of array flatten. | [homepage](https://github.com/jonschlinkert/arr-flatten)
+* [arr-union](https://www.npmjs.com/package/arr-union): Combines a list of arrays, returning a single array with unique values, using strict equality… [more](https://www.npmjs.com/package/arr-union) | [homepage](https://github.com/jonschlinkert/arr-union)
+* [is-plain-object](https://www.npmjs.com/package/is-plain-object): Returns true if an object was created by the `Object` constructor. | [homepage](https://github.com/jonschlinkert/is-plain-object)
+* [isobject](https://www.npmjs.com/package/isobject): Returns true if the value is an object and not an array or null. | [homepage](https://github.com/jonschlinkert/isobject)
+
 ## Contributing
 
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/in-array/issues/new).

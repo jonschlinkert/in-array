@@ -43,6 +43,14 @@
     "plugins": [
       "gulp-format-md"
     ],
+    "related": {
+      "list": [
+        "isobject",
+        "is-plain-object",
+        "arr-flatten",
+        "arr-union"
+      ]
+    },
     "reflinks": [
       "verb"
     ],
